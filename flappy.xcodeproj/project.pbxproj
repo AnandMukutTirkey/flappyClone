@@ -14,8 +14,6 @@
 		175199961D93E76900FBA472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175199941D93E76900FBA472 /* Main.storyboard */; };
 		175199981D93E76900FBA472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175199971D93E76900FBA472 /* Assets.xcassets */; };
 		1751999B1D93E76900FBA472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175199991D93E76900FBA472 /* LaunchScreen.storyboard */; };
-		175199A61D93E76900FBA472 /* flappyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175199A51D93E76900FBA472 /* flappyTests.swift */; };
-		175199B11D93E76900FBA472 /* flappyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175199B01D93E76900FBA472 /* flappyUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +44,7 @@
 		1751999A1D93E76900FBA472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1751999C1D93E76900FBA472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175199A11D93E76900FBA472 /* flappyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flappyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		175199A51D93E76900FBA472 /* flappyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flappyTests.swift; sourceTree = "<group>"; };
-		175199A71D93E76900FBA472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175199AC1D93E76900FBA472 /* flappyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flappyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		175199B01D93E76900FBA472 /* flappyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flappyUITests.swift; sourceTree = "<group>"; };
-		175199B21D93E76900FBA472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				1751998B1D93E76900FBA472 /* flappy */,
-				175199A41D93E76900FBA472 /* flappyTests */,
-				175199AF1D93E76900FBA472 /* flappyUITests */,
 				1751998A1D93E76900FBA472 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,24 +103,6 @@
 				1751999C1D93E76900FBA472 /* Info.plist */,
 			);
 			path = flappy;
-			sourceTree = "<group>";
-		};
-		175199A41D93E76900FBA472 /* flappyTests */ = {
-			isa = PBXGroup;
-			children = (
-				175199A51D93E76900FBA472 /* flappyTests.swift */,
-				175199A71D93E76900FBA472 /* Info.plist */,
-			);
-			path = flappyTests;
-			sourceTree = "<group>";
-		};
-		175199AF1D93E76900FBA472 /* flappyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				175199B01D93E76900FBA472 /* flappyUITests.swift */,
-				175199B21D93E76900FBA472 /* Info.plist */,
-			);
-			path = flappyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,13 +174,16 @@
 					175199881D93E76900FBA472 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 5C9A67KXWT;
+						LastSwiftMigration = 0820;
 					};
 					175199A01D93E76900FBA472 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 175199881D93E76900FBA472;
 					};
 					175199AB1D93E76900FBA472 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 175199881D93E76900FBA472;
 					};
 				};
@@ -274,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				175199A61D93E76900FBA472 /* flappyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				175199B11D93E76900FBA472 /* flappyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tk.wework.doko.flappy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -435,6 +411,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tk.wework.doko.flappy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -447,6 +424,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tk.wework.doko.flappyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flappy.app/flappy";
 			};
 			name = Debug;
@@ -459,6 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tk.wework.doko.flappyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flappy.app/flappy";
 			};
 			name = Release;
@@ -471,6 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tk.wework.doko.flappyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = flappy;
 			};
 			name = Debug;
@@ -482,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tk.wework.doko.flappyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = flappy;
 			};
 			name = Release;
